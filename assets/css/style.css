@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+html {
+  text-rendering: optimizeLegibility !important;
+}
+div{
+  display: block;
+}
+body {
+  font-family: "noto-sans-cjk-jp","ヒラギノ角ゴ Pro W3","HiraKakuPro-W3","Hiragino Kaku Gothic Pro","Hiragino Sans","メイリオ", "Meiryo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  letter-spacing: 1px;
+
+  color: #333;
+  background: #fff;
+
+  text-rendering: optimizeLegibility;
+}
+/* ===============================
+Top Page
+=============================== */
+.wrapper{
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  background: darkred;
+}
+.head-block{
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head-word{
+  width: 600px;
+}
+.nav-box{
+  width: calc(100% - 600px);
+  padding: 20px;
+}
+.container {
+  max-width: 1260px;
+  padding: 0 30px;
+  margin: 0 auto;
+  
+}
+
+.nav-box ul li {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 20px;
+}
+nav ul {
+  list-style: none;
+  align-items: center;
+  
+}
+.nav-box ul li p.gnav-txt a{
+  color: #fff;
+}
+.h-content{
+  padding: 50px 0px;
+}
+.content-title{
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px;
+  color: crimson;
+}
+.content-body{
+  position: relative;
+  justify-content: center;
+  color: maroon;
+}
+.photo{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.p-p {
+  width: 25%;
+  padding: 0 10px 20px 10px;
+}
+.p-p img{
+  width: 100%;
+  
+}
+.p-size{
+  margin-bottom: 10px;
+}
+.about-us{
+  display: flex;
+  margin: 50px -10px 30px -10px;
+  
+}
+.sub-about{
+  width: 50%;
+  padding: 0 10px;
+}
+.about-img img{
+  width: 100%;
+  margin: 0 auto;
+}
+.address-txt{
+  font-weight: bold;
+}
+footer{
+  background-color:darkred;
+}
+
+.contact-us{
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.sub-contact{
+  width: 50%;
+  padding:50px 30px;
+  color: #fff;
+}
+.sub-contact form{
+  width: 100%;
+}
+.address-ph{
+  height: 50%;
+}
+.contact-txt{
+  color: #000;
+  padding: 10px;
+  width: 100%;
+  line-height: 1.5;
+  border: none;
+}
+.f-input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact-btn{
+  width: 200px;
+}
+.contact-btn button{
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px){
+.nav-box{
+    z-index: 2;
+    /* position: absolute; */
+    top: 70px;
+    /* opacity: 0; */
+    /* width: 100%;
+    height: 100vh; */
+    overflow-x: hidden;
+    /* padding-bottom: 100px; */
+}
+.nav-box .container {
+  margin-bottom: 60px;
+  background: #b30000;
+}
+.container {
+  /* padding: 0 20px; */
+}
+.nav-box ul li {
+  display: block;
+  margin: 0 -15px;
+  border-bottom: 1px solid #fff;
+}
+}
+@media screen and (max-width: 768px) {
+} /* for tablet size (768px-100px)*/
+
+
